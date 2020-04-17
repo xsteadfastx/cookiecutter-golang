@@ -15,5 +15,5 @@ steps:
   - name: build
     image: golang:1.14
     commands:
-      - go get github.com/mitchellh/gox
+      - (cd /tmp; go get github.com/mitchellh/gox)
       - make build
