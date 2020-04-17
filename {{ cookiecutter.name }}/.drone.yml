@@ -2,16 +2,25 @@
 kind: pipeline
 name: default
 type: docker
+
 steps:
+
+  - name: fetch
+    image: alpine/git
+    commands:
+      - git fetch --tags
+
   - name: lint
     image: golangci/golangci-lint:v1.23-alpine
     commands:
       - apk add --no-cache make
       - make lint
+
   - name: test
     image: golang:1.14
     commands:
       - make test
+
   - name: build
     image: golang:1.14
     commands:
