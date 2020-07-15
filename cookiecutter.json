@@ -1,6 +1,6 @@
 {
-  "name": "my_golang_project",
-  "repo": "github.com/xsteadfastx/my_golang_project",
+  "name": "project",
+  "repo": "github.com/xsteadfastx/project",
   "author_name": "Don Draper",
   "author_email": "draper@sterling-cooper-draper-pryce.tld",
   "short_description": "here is a short description",

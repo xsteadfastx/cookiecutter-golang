@@ -11,7 +11,7 @@ steps:
       - git fetch --tags
 
   - name: lint
-    image: golangci/golangci-lint:v1.23-alpine
+    image: golangci/golangci-lint:v1.27-alpine
     commands:
       - apk add --no-cache make
       - make lint
